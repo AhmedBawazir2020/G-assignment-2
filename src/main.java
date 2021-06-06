@@ -6,14 +6,25 @@ public class main {
     public static void main(String[] args) {
         int num=0;
         int num2=0;
-        System.out.println(" chooses your operations \n  Relation statement  1. show the Complementary |" +
-                "2. the Inverse | 3. the Union | 4. the Intersection");
+        System.out.println(" chooses your operations \n 1. Relation statement | 2. show the Complementary |" +
+                "3. the Inverse | 4. the Union | 5. the Intersection");
         int op =0;
         System.out.print("enter the numbers :");
         op =scan.nextInt();
-     if ( op ==3){
+     if ( op ==1){
+         System.out.println("The Relation statement");
+
+     } else if (op == 2){
+         System.out.println("Show the Complementary");
+
+     }else if (op == 3){
+         System.out.println("the Inverse");
+
+     }else if (op == 4){
+         System.out.println("The Union Relation");
          union();
-     } else if (op == 4){
+     }else if (op == 5){
+         System.out.println("The Intersection Relation");
          Intersection();
      }
 
@@ -21,7 +32,7 @@ public class main {
     }
 
     static void union(){
-        System.out.println("The Union Relation");
+
         // create the first set
         Set<Integer> set1 = new HashSet<>();
         System.out.println("Total number in set 1 : ");
